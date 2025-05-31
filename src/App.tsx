@@ -21,7 +21,7 @@ const App = () => (
           <div className="min-h-screen bg-white dark:bg-slate-900 transition-colors duration-300">
             <Toaster />
             <Sonner />
-            <BrowserRouter>
+            <BrowserRouter basename="/finance-tracker/">
               <Routes>
                 <Route path="/auth" element={<Auth />} />
                 <Route 
