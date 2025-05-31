@@ -4,13 +4,14 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/finance-tracker/", // ← Add this line for GitHub Pages
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [
     react(),
-    mode === 'development' ,
+    mode === 'development',
   ].filter(Boolean),
   resolve: {
     alias: {
